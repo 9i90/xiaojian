@@ -1,0 +1,352 @@
+/**
+ *  iPhone 5/5s
+ */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+    html {
+        font-size: 14.2px;
+    }
+}
+
+/*iPhone 6 Portrait*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+    html {
+        font-size: 16.7px;
+    }
+}
+
+/*iPhone 6+ Portrait*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+    html {
+        font-size: 18.4px;
+    }
+}
+
+/*iPhone 6+ landscape*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+    html {
+        font-size: 18.4px;
+    }
+}
+
+/**
+ *  BlackBerry PlayBook Portrait
+ */
+@media screen
+and (device-width: 600px)
+and (device-height: 1024px)
+and (-webkit-device-pixel-ratio: 1) {
+    html {
+        font-size: 26.7px;
+    }
+}
+
+/**
+ *  BlackBerry Z30
+ */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 2) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/**
+ *  Google Nexus 10
+ */
+@media screen
+and (device-width: 800px)
+and (device-height: 1280px)
+and (-webkit-device-pixel-ratio: 2) {
+    html {
+        font-size: 35.6px;
+    }
+}
+
+/**
+ *  Google Nexus 4
+ */
+@media screen
+and (device-width: 384px)
+and (device-height: 567px)
+and (-webkit-device-pixel-ratio: 2) {
+    html {
+        font-size: 17.1px;
+    }
+}
+
+/**
+ *  Google Nexus 7
+ */
+@media screen
+and (device-width: 600px)
+and (device-height: 960px)
+and (-webkit-device-pixel-ratio: 2) {
+    html {
+        font-size: 26.7px;
+    }
+}
+
+/**
+ *  Galaxy S4 landscape
+ */
+@media screen
+and (device-width: 320px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: landscape) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/**
+ *  LG Optimus L70
+ */
+@media screen
+and (device-width: 384px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 1.25) {
+    html {
+        font-size: 17.1px;
+    }
+}
+
+/**
+ *  Galaxy S4 portrait
+ */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: portrait) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/**
+ *  Galaxy S4 landscape
+ */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: landscape) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/**
+ *  Nokia Lumia 520
+ */
+@media screen
+and (device-width: 320px)
+and (device-height: 533px)
+and (-webkit-device-pixel-ratio: 1.4) {
+    html {
+        font-size: 14.2px;
+    }
+}
+
+/**
+ *  Nokia N9
+ */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 1)
+and (orientation: portrait) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/**
+ *  Samsung Galaxy Note 3 || Samsung Galaxy S 4
+ */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: landscape) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/**
+ *  Samsung Galaxy Note 2 || Samsung Galaxy S 3
+ */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 2)
+and (orientation: landscape) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/**
+ *  iPad Mini landscape & portrait
+ */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1) {
+    html {
+        font-size: 34.1px
+    }
+}
+
+/**
+ *  iPad 3/4 landscape & portrait
+ */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    html {
+        font-size: 25px
+    }
+}
+
+/**
+ *  Asus Nexus 7 landscape & portrait
+ */
+@media screen
+and (device-width: 601px)
+and (device-height: 906px)
+and (-webkit-min-device-pixel-ratio: 1.331)
+and (-webkit-max-device-pixel-ratio: 1.332) {
+
+}
+
+/**
+ *  Asus Nexus 7 portrait
+ */
+@media screen
+and (device-width: 601px)
+and (device-height: 906px)
+and (-webkit-min-device-pixel-ratio: 1.331)
+and (-webkit-max-device-pixel-ratio: 1.332)
+and (orientation: portrait) {
+
+}
+
+/**
+ *  Asus Nexus 7 landscape
+ */
+@media screen
+and (device-width: 601px)
+and (device-height: 906px)
+and (-webkit-min-device-pixel-ratio: 1.331)
+and (-webkit-max-device-pixel-ratio: 1.332)
+and (orientation: landscape) {
+
+}
+
+/**
+ *  Kindle Fire HD 7" landscape & portrait
+ */
+@media only screen
+and (min-device-width: 800px)
+and (max-device-width: 1280px)
+and (-webkit-min-device-pixel-ratio: 1.5) {
+
+}
+
+/**
+ *  Kindle Fire HD 7" portrait
+ */
+@media only screen
+and (min-device-width: 800px)
+and (max-device-width: 1280px)
+and (-webkit-min-device-pixel-ratio: 1.5)
+and (orientation: portrait) {
+}
+
+/**
+ *  Kindle Fire HD 7" landscape
+ */
+@media only screen
+and (min-device-width: 800px)
+and (max-device-width: 1280px)
+and (-webkit-min-device-pixel-ratio: 1.5)
+and (orientation: landscape) {
+
+}
+
+/**
+ *  Kindle Fire HD 8.9" landscape & portrait
+ */
+@media only screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1.5) {
+
+}
+
+/**
+ *  Kindle Fire HD 8.9" portrait
+ */
+@media only screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1.5)
+and (orientation: portrait) {
+}
+
+/**
+ *  Kindle Fire HD 8.9" landscape
+ */
+@media only screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1.5)
+and (orientation: landscape) {
+
+}
+
+/**
+ *  Non-Retina Screens
+ */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/**
+ *  Retina Screens
+ */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) {
+}
+
+/**
+ *  Apple Watch
+ */
+@media (max-device-width: 42mm)
+and (min-device-width: 38mm) {
+
+}
+
+/**
+ *  Moto 360 Watch
+ */
+@media (max-device-width: 218px)
+and (max-device-height: 281px) {
+
+}
