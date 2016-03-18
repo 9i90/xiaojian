@@ -6,7 +6,9 @@ import com.xiao.web.entity.ArticleInfo;
 import com.xiao.web.page.Page;
 
 public interface ArticleInfoDao extends BaseDAO {
-	ArticleInfo selectByPrimaryKey(Integer id);
+	ArticleInfo selectByPrimaryKey(String id);
 
 	List<ArticleInfo> selectArticeByWhere(Map param, Page p);
+	
+	void updateReadCount(String articleId);
 }
