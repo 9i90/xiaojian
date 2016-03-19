@@ -15,20 +15,10 @@
     <div class="ui-header ui-bar-inherit"></div>
     <div class="ui-content">
         <div class="main">
-            <ul class="nav-earn-tabs nav nav-tabs clearfix flex-container">
-                <li class="active flex-item"><a>热文</a></li>
-                <li class="flex-item"><a>推荐</a></li>
-                <li class="flex-item"><a>健康</a></li>
-                <li class="flex-item"><a>视频</a></li>
-                <li class="flex-item"><a>育儿</a></li>
-                <li class="tab-dropdown dropdown">
-                    <a class="dropdown-toggle"><i class="icon icon-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li class="nav-earn-more"><a>育儿</a></li>
-                        <li class="nav-earn-more"><a>育儿</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="input-group search-group">
+                <input class="form-control" type="text" placeholder="Search for...">
+                <span class="input-group-btn"><input type="button" class="btn btn-primary" value="搜索"></span>
+            </div>
             <div class="feed-list">
                 <div class="feed-item media">
                     <div class="media-left"><img class="feed-img" src="images/feed.png"></div>

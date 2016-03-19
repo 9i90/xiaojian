@@ -1,4 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<%@ include file="taglib.jsp" %>
+<%
+String path = request.getContextPath();
+String basePath = path+"/";
+%>
 <!DOCTYPE html>
 <html lang="zh-CN" class="ui-mobile">
 <head>
@@ -8,7 +13,7 @@
           content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>文章查询</title>
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="<%=basePath %>css/base.css">
 </head>
 <body class="ui-mobile-viewport ui-overlay">
 <div class="ui-page ui-page-active">
@@ -29,15 +34,29 @@
                     </ul>
                 </li>
             </ul>
-            <div class="feed-list">
-                <div class="feed-item media">
-                    <div class="media-left"><img class="feed-img" src="images/feed.png"></div>
-                    <div class="media-body"><p class="feed-summary">有这五大标记才叫真美女，你有吗？</p></div>
-                </div>
-            </div>
+           <c:forEach items="${list }" var="info">
+	           <div class="feed-list">
+	                <div class="feed-item media">
+	                    <div class="media-left"><img class="feed-img" src="${info.litpic }"></div>
+	                    <div class="media-body"><p class="feed-summary"><a href="<%=basePath %>article/detail/${info.id }.html">${info.title }</a></p></div>
+	                </div>
+	            </div>
+           </c:forEach>
         </div>
     </div>
     <div class="ui-footer ui-bar-inherit"></div>
 </div>
 </body>
 </html>
+<script type="text/javascript" src="<%=basePath %>js/jquery-1.8.3.min.js"/>
+<script type="text/javascript">
+$(function() {
+	alert("asd");
+});
+$(window).scroll(function () {
+    if ($(document).scrollTop() + $(window).height() >= $(document).height()) {
+        alert("哦哦,到底了.");
+    }
+});
+</script>
+

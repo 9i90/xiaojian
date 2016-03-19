@@ -16,7 +16,7 @@ public class HomeController extends BaseController{
 	@RequestMapping("/index")
 	public ModelAndView index(HttpServletRequest request,
 			HttpServletResponse response) {
-		ModelAndView mv=new ModelAndView("index");
+		ModelAndView mv=new ModelAndView("redirect:list.html");
 		return mv;
 	}
 }

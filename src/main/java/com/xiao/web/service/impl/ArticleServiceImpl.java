@@ -1,6 +1,9 @@
 package com.xiao.web.service.impl;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +12,8 @@ import org.springframework.stereotype.Service;
 import com.xiao.web.dao.ArticleInfoDao;
 import com.xiao.web.entity.ArticleInfo;
 import com.xiao.web.entity.ArticleReadRecord;
+import com.xiao.web.page.Page;
+import com.xiao.web.page.PageInterceptor;
 import com.xiao.web.service.ArticleService;
 @Service(value="articleService")
 public class ArticleServiceImpl implements ArticleService {
@@ -31,6 +36,12 @@ public class ArticleServiceImpl implements ArticleService {
 	@Override
 	public ArticleInfo findArticleById(String id) {
 		return articleInfoDao.selectByPrimaryKey(id);
+	}
+	@Override
+	public List<Map> queryArticleByWhere(Map param, Page p) {
+		if(param==null)param = new HashMap();
+		param.put(PageInterceptor.PAGE_KEY, p);
+		return articleInfoDao.queryArticleByWhere(param);
 	}
 
 }

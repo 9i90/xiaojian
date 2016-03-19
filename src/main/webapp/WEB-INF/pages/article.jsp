@@ -1,4 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<%@ include file="taglib.jsp" %>
+<%
+String path = request.getContextPath();
+String basePath = path+"/";
+%>
 <!DOCTYPE html>
 <html lang="zh-CN" class="ui-mobile">
 <head>
@@ -8,18 +13,19 @@
           content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>文章详情</title>
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="<%=basePath %>css/base.css">
 </head>
 <body class="ui-mobile-viewport ui-overlay">
 <div class="ui-page ui-page-active">
     <div class="ui-header ui-bar-inherit"></div>
     <div class="ui-content">
         <div class="main articlescrap-main">
-            <h1 class="article-title">有五大标记才叫美女</h1>
+            <h1 class="article-title">${info.title }</h1>
 
-            <p class="article-subtitle"><span class="article-date">2016-02-02</span><span
-                    class="article-editor">发发发</span></p>
+            <p class="article-subtitle"><span class="article-date"><fmt:formatDate value="${info.addtime }" pattern="yyyy-MM-dd"/></span><span
+                    class="article-editor">${info.content }</span></p>
         </div>
+        asdasdasdas啊实打实大师的撒的阿萨德
         <div class="savebar flex-container">
             <a class="flex-item">
                 <i class="icon icon-star"></i>收藏

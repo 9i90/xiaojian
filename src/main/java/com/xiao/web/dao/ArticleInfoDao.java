@@ -11,4 +11,6 @@ public interface ArticleInfoDao extends BaseDAO {
 	List<ArticleInfo> selectArticeByWhere(Map param, Page p);
 	
 	void updateReadCount(String articleId);
+	
+	List<Map>  queryArticleByWhere(Map param);
 }

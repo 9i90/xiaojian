@@ -34,5 +34,11 @@ public class ArticleInfoDaoImpl extends BaseDaoImpl implements ArticleInfoDao{
 		if(flag<=0)throw new RuntimeException("update article is error");
 	}
 
+
+	@Override
+	public List<Map> queryArticleByWhere(Map param) {
+		return this.getSqlSession().selectList("com.xiao.web.dao.ArticleInfoMapper.queryArticleByWhere", param);
+	}
+
 	
 }

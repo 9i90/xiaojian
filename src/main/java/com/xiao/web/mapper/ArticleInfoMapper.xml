@@ -40,4 +40,11 @@
     set read_count = read_count+1
     where id = #{id,jdbcType=VARCHAR}
   </update>
+  <select id="queryArticleByWhere" resultMap="BaseResultMap" parameterType="map" >
+    select
+    <include refid="Base_Column_List" />
+    from article_info
+    where status = '1'
+  </select>
+  
 </mapper>
